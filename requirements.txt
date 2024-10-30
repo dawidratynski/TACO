@@ -1,9 +1,15 @@
 pillow
 requests
 jupyter
-numpy
+numpy<2.0
 pandas
 matplotlib
 seaborn
 graphviz
 Cython
+
+tensorflow
+scipy
+scikit-image
+keras
+imgaug
