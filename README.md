@@ -47,6 +47,17 @@ If you use this dataset and API in a publication, please cite us using: &nbsp;
 
 ### Requirements 
 
+This repo requires Python version between 3.8 and 3.11 as well as g++11.
+
+To install dependencies run:
+```
+./setup.sh
+```
+
+<details>
+<summary>(From source README)</summary>
+<br>
+
 To install the required python packages simply type
 ```
 pip3 install -r requirements.txt
@@ -55,6 +66,7 @@ Additionaly, to use ``demo.pynb``, you will also need [coco python api](https://
 ```
 pip3 install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
+</details>
 
 ### Download
 
