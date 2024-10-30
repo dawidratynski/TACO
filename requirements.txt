@@ -10,6 +10,7 @@ Cython
 
 tensorflow
 scipy
-scikit-image
+scikit-image<0.19
 keras
 imgaug
+PyQt5

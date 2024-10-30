@@ -48,8 +48,8 @@ def log(text, array=None):
         text = text.ljust(25)
         text += ("shape: {:20}  min: {:10.5f}  max: {:10.5f}  {}".format(
             str(array.shape),
-            array.min() if array.size else "",
-            array.max() if array.size else "",
+            array.min() if array.size else 0,
+            array.max() if array.size else 0,
             array.dtype))
     print(text)
 
@@ -1404,7 +1404,7 @@ def build_detection_targets(rpn_rois, gt_class_ids, gt_boxes, gt_masks, config):
         gt_class_ids.dtype)
     assert gt_boxes.dtype == np.int32, "Expected int but got {}".format(
         gt_boxes.dtype)
-    assert gt_masks.dtype == bool_, "Expected bool but got {}".format(
+    assert gt_masks.dtype == bool, "Expected bool but got {}".format(
         gt_masks.dtype)
 
     # It's common to add GT Boxes to ROIs but we don't do that here because
